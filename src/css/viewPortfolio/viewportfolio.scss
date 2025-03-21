@@ -1,0 +1,134 @@
+.viewportfolioWrap {
+  background-color: #222;
+  min-height: 150vh;
+  overflow-y: scroll;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .induce {
+    width: 8px;
+    height: 50px;
+    background-color: #444;
+    margin: auto;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: #FF9843;
+    }
+  }
+
+  .projectsWrap {
+    width: 100%;
+    padding: 0 5rem;
+    color: #fff;
+
+    >ul {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+
+      li {
+        justify-self: center;
+        transition: .3s;
+        button {
+          width: 380px;
+          background-color: #222;
+          border: none;
+          cursor: pointer;
+          transition: .3s;
+
+          .thumbNail {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 1rem;
+            background-color: #333;
+            transition: .3s;
+          }
+
+          .mainsite {
+            background-image: url(/public/mainSiteImg.PNG);
+            background-position: center;
+            background-size: cover;
+          }
+
+          .weatherProject {
+            background-image: url(/public/weatherProjectImg.PNG);
+            background-position: center;
+            background-size: 180%;
+          }
+        }
+
+        h2 {
+          color: #fff;
+          text-align: left;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+
+        &:hover {
+          scale: 1.1;
+
+          .thumbNail {
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:1280px) and (max-width:1599px) {
+  .viewportfolioWrap {
+    .projectsWrap {
+      margin-top: 5rem;
+      >ul {
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+        li{
+          width: 100%;
+          background-color: salmon;
+          button{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1279px) {
+  .viewportfolioWrap {
+    .projectsWrap {
+      margin-top: 5rem;
+      >ul {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        li{
+          width: 100%;
+          background-color: salmon;
+          button{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .viewportfolioWrap{
+    padding: 6rem 0;
+    .projectsWrap{
+      padding: 0 1rem;
+      ul{
+        gap: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.mainSiteDetailWrap {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(20px);
+}
+.mainSiteDetailWrap .mainSiteDetail {
+  background-color: rgba(0, 0, 0, 0.4431372549);
+  backdrop-filter: blur(30px);
+  width: 1100px;
+  height: 85vh;
+  overflow-y: scroll;
+  border-radius: 30px;
+  padding: 3rem;
+  margin: auto;
+}
+.mainSiteDetailWrap .mainSiteDetail button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 32px;
+  cursor: pointer;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .thumbNail {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information div {
+  display: flex;
+  justify-content: space-between;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information div p {
+  font-size: 24px;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information div span {
+  font-weight: 300;
+  line-height: 25px;
+  text-align: right;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information div:last-child .feedback {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 0;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information div:last-child .feedback figure {
+  width: 300px;
+  height: 180px;
+  overflow: hidden;
+}
+.mainSiteDetailWrap .mainSiteDetail .contents .information .bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #aaa;
+  box-shadow: 0px 5px 10px #555;
+  margin: auto;
+}
+.mainSiteDetailWrap .accent {
+  color: #FF9843;
+}
+
+/*# sourceMappingURL=detail.css.map */

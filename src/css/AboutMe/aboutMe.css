@@ -1,0 +1,293 @@
+.aboutMeWrap {
+  background-color: #222;
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.aboutMeWrap .bannerWrap {
+  position: relative;
+  margin-top: 5rem;
+  background-color: #333;
+  width: 100%;
+  height: 700px;
+}
+.aboutMeWrap .bannerWrap > div {
+  margin: 0 10rem;
+}
+.aboutMeWrap .bannerWrap .titleWrap {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.aboutMeWrap .bannerWrap .titleWrap > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.aboutMeWrap .bannerWrap .titleWrap > div .verticalBar {
+  width: 8px;
+  height: 40px;
+  margin-top: 6px;
+  background-color: #FF9843;
+  border-radius: 2px;
+}
+.aboutMeWrap .bannerWrap .titleWrap > div h1 {
+  font-size: 64px;
+}
+.aboutMeWrap .bannerWrap .titleWrap ul {
+  display: flex;
+  gap: 36px;
+  color: #555;
+  font-weight: 600;
+}
+.aboutMeWrap .bannerWrap .btnWrap {
+  position: absolute;
+  top: 16rem;
+  left: 0;
+}
+.aboutMeWrap .bannerWrap .btnWrap button {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #3468C0;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.aboutMeWrap .bannerWrap p {
+  position: absolute;
+  top: 27rem;
+  left: 10rem;
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 35px;
+  color: #ccc;
+}
+.aboutMeWrap .bannerWrap p .accentFont {
+  font-size: 32px;
+  color: #fff;
+}
+.aboutMeWrap .bannerWrap .skillIconWrap {
+  position: absolute;
+  bottom: 3rem;
+  left: 10rem;
+  display: flex;
+  gap: 12px;
+}
+.aboutMeWrap .bannerWrap .skillIconWrap li {
+  max-width: 50px;
+}
+.aboutMeWrap .bannerWrap .skillIconWrap li img {
+  fill: #fff;
+}
+.aboutMeWrap .induce {
+  width: 8px;
+  height: 50px;
+  background-color: #444;
+  margin: auto;
+  margin-top: 5rem;
+}
+.aboutMeWrap .induce span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #FF9843;
+}
+.aboutMeWrap .faithWrap {
+  margin: 5rem 10rem 10rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.aboutMeWrap .faithWrap > p {
+  margin-left: 63px;
+  font-size: 40px;
+}
+.aboutMeWrap .faithWrap > div {
+  display: flex;
+  gap: 86px;
+}
+.aboutMeWrap .faithWrap > div .faithLeft {
+  width: 528px;
+  height: 700px;
+  margin-left: 63px;
+  align-content: center;
+}
+.aboutMeWrap .faithWrap > div .faithRight {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+.aboutMeWrap .faithWrap > div .faithRight .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 3rem;
+}
+.aboutMeWrap .faithWrap > div .faithRight .title > p {
+  font-size: 40px;
+}
+.aboutMeWrap .faithWrap > div .faithRight .title ul {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  color: #444;
+  align-items: center;
+}
+.aboutMeWrap .faithWrap > div .faithRight .title ul .star {
+  color: #FF9843;
+  font-size: 12px;
+}
+.aboutMeWrap .faithWrap > div .faithRight .title ul li span {
+  display: block;
+  border: 1px solid #444;
+  padding: 0.3rem;
+  margin-right: 2rem;
+  margin-left: -0.5rem;
+}
+.aboutMeWrap .faithWrap > div .faithRight .btnWrap {
+  display: flex;
+  gap: 12px;
+}
+.aboutMeWrap .faithWrap > div .faithRight .btnWrap button {
+  padding: 1rem 4rem;
+  background-color: #3468C0;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+.aboutMeWrap .faithWrap > div .faithRight .explain {
+  height: 100%;
+  margin-top: 8rem;
+  font-size: 20px;
+  line-height: 30px;
+  color: #aaa;
+}
+
+@media (max-width: 1599px) {
+  .aboutMeWrap .faithWrap > p {
+    font-size: 32px;
+  }
+  .aboutMeWrap .faithWrap > div .faithLeft {
+    width: 250px;
+    height: 350px;
+    align-self: center;
+    margin-top: 50px;
+  }
+  .aboutMeWrap .faithWrap > div .faithLeft figure img {
+    max-width: 250px !important;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight {
+    width: 600px;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .title > p {
+    font-size: 32px;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .explain {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .btnWrap button {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 1279px) {
+  .aboutMeWrap .bannerWrap p {
+    top: 24rem;
+  }
+  .aboutMeWrap .bannerWrap .skillIconWrap {
+    bottom: 1rem;
+  }
+  .aboutMeWrap .bannerWrap .skillIconWrap li {
+    max-width: 40px;
+  }
+  .aboutMeWrap .faithWrap {
+    margin: 5rem 2rem;
+  }
+  .aboutMeWrap .faithWrap > p {
+    font-size: 24px;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight {
+    max-width: 100%;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .title p {
+    font-size: 24px;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .title ul {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .aboutMeWrap .bannerWrap {
+    height: 350px;
+  }
+  .aboutMeWrap .bannerWrap p {
+    display: none;
+  }
+  .aboutMeWrap .bannerWrap > div {
+    margin: unset;
+    margin-left: 1rem;
+  }
+  .aboutMeWrap .bannerWrap .titleWrap {
+    top: 1rem;
+    left: 30%;
+  }
+  .aboutMeWrap .bannerWrap .titleWrap > div .verticalBar {
+    height: 20px;
+    margin-top: -2px;
+  }
+  .aboutMeWrap .bannerWrap .titleWrap > div h1 {
+    font-size: 24px;
+  }
+  .aboutMeWrap .bannerWrap .titleWrap ul {
+    display: none;
+  }
+  .aboutMeWrap .bannerWrap .btnWrap {
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .aboutMeWrap .bannerWrap .btnWrap button {
+    width: 150px;
+    height: 50px;
+  }
+  .aboutMeWrap .bannerWrap .skillIconWrap {
+    display: none;
+  }
+  .aboutMeWrap .faithWrap {
+    margin: 1rem;
+  }
+  .aboutMeWrap .faithWrap > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    align-items: center;
+  }
+  .aboutMeWrap .faithWrap > div .faithLeft {
+    width: auto;
+    margin: unset;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight {
+    align-items: center;
+    gap: 2rem;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .title {
+    margin-top: unset;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .explain {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=aboutMe.css.map */

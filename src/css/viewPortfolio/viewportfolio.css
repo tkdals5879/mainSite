@@ -1,0 +1,118 @@
+.viewportfolioWrap {
+  background-color: #222;
+  min-height: 150vh;
+  overflow-y: scroll;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.viewportfolioWrap .induce {
+  width: 8px;
+  height: 50px;
+  background-color: #444;
+  margin: auto;
+}
+.viewportfolioWrap .induce span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #FF9843;
+}
+.viewportfolioWrap .projectsWrap {
+  width: 100%;
+  padding: 0 5rem;
+  color: #fff;
+}
+.viewportfolioWrap .projectsWrap > ul {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+.viewportfolioWrap .projectsWrap > ul li {
+  justify-self: center;
+  transition: 0.3s;
+}
+.viewportfolioWrap .projectsWrap > ul li button {
+  width: 380px;
+  background-color: #222;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.viewportfolioWrap .projectsWrap > ul li button .thumbNail {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+  background-color: #333;
+  transition: 0.3s;
+}
+.viewportfolioWrap .projectsWrap > ul li button .mainsite {
+  background-image: url(/public/mainSiteImg.PNG);
+  background-position: center;
+  background-size: cover;
+}
+.viewportfolioWrap .projectsWrap > ul li button .weatherProject {
+  background-image: url(/public/weatherProjectImg.PNG);
+  background-position: center;
+  background-size: 180%;
+}
+.viewportfolioWrap .projectsWrap > ul li h2 {
+  color: #fff;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.viewportfolioWrap .projectsWrap > ul li:hover {
+  scale: 1.1;
+}
+.viewportfolioWrap .projectsWrap > ul li:hover .thumbNail {
+  border-radius: 50px;
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .viewportfolioWrap .projectsWrap {
+    margin-top: 5rem;
+  }
+  .viewportfolioWrap .projectsWrap > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .viewportfolioWrap .projectsWrap > ul li {
+    width: 100%;
+    background-color: salmon;
+  }
+  .viewportfolioWrap .projectsWrap > ul li button {
+    width: 100%;
+  }
+}
+@media (max-width: 1279px) {
+  .viewportfolioWrap .projectsWrap {
+    margin-top: 5rem;
+  }
+  .viewportfolioWrap .projectsWrap > ul {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .viewportfolioWrap .projectsWrap > ul li {
+    width: 100%;
+    background-color: salmon;
+  }
+  .viewportfolioWrap .projectsWrap > ul li button {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .viewportfolioWrap {
+    padding: 6rem 0;
+  }
+  .viewportfolioWrap .projectsWrap {
+    padding: 0 1rem;
+  }
+  .viewportfolioWrap .projectsWrap ul {
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=viewportfolio.css.map */

@@ -1,0 +1,118 @@
+.portfolioWrap {
+  width: 100%;
+  height: 700px;
+  background-color: #333;
+  color: #fff;
+  padding: 3rem 10rem;
+  position: relative;
+}
+.portfolioWrap .titleWrap {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.portfolioWrap .titleWrap > div {
+  display: flex;
+  gap: 20px;
+}
+.portfolioWrap .titleWrap > div h1 {
+  font-size: 48px;
+}
+.portfolioWrap .titleWrap > div span {
+  display: block;
+  background-color: #FF9843;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+.portfolioWrap .titleWrap ul {
+  display: flex;
+  gap: 12px;
+  color: #555;
+  align-items: center;
+}
+.portfolioWrap .btnWrap {
+  margin-top: 2rem;
+  display: flex;
+  gap: 24px;
+}
+.portfolioWrap .btnWrap button {
+  width: 150px;
+  height: 50px;
+  background-color: #3468C0;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+.portfolioWrap .btnWrap button:first-child {
+  width: 200px;
+}
+.portfolioWrap .descriptionWrap {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.portfolioWrap .descriptionWrap > div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.portfolioWrap .descriptionWrap > div span {
+  width: 4px;
+  height: 20px;
+  background-color: #FF9843;
+}
+.portfolioWrap .descriptionWrap > div p {
+  font-size: 24px;
+}
+.portfolioWrap .descriptionWrap > p {
+  line-height: 24px;
+  line-height: 30px;
+  color: #ccc;
+}
+
+@media (max-width: 1279px) {
+  .portfolioWrap .titleWrap > div h1 {
+    font-size: 32px;
+  }
+  .portfolioWrap .btnWrap button {
+    width: 100px;
+    height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolioWrap {
+    padding: 1rem;
+    height: 350px;
+  }
+  .portfolioWrap .titleWrap {
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .portfolioWrap .titleWrap > div h1 {
+    font-size: 24px;
+  }
+  .portfolioWrap .titleWrap > div span {
+    display: none;
+  }
+  .portfolioWrap .titleWrap ul {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .portfolioWrap .btnWrap {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .portfolioWrap .btnWrap button {
+    width: 120px !important;
+  }
+  .portfolioWrap .descriptionWrap {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mainsite.css.map */
