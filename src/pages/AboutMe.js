@@ -98,14 +98,13 @@ function AboutMe() {
             <div>
               <motion.div className='faithLeft' initial={{ x: -80, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ opacity: { duration: 2, delay: 2 }, x: { delay: 2, duration: .5 } }}>
                 <figure>
-                  <img src="/IDPhoto.jpg" alt="IDPhoto" />
+                  <img src="" alt="" />
                 </figure>
               </motion.div>
               <motion.div className='faithRight' initial={{ x: 80, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ opacity: { duration: 2, delay: 2 }, x: { delay: 2, duration: .5 } }}>
 
                 <div className='title'>
-                  <p>천재는 노력하는자를 이길 수 없고 <br />
-                    노력하는자는 즐기는 자를 이길 수 없다</p>
+                  <p>웹퍼블리셔 : 이상민</p>
                   <ul>
                     <li className='star'><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></li>
                     <li><span><p>전체이용가</p></span></li>
