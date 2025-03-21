@@ -15,14 +15,18 @@ function App() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 1279) {
-        seteYValue(120)
-      } else{
-        seteYValue(165)
+        seteYValue(120);
+      } else {
+        seteYValue(165);
       }
-      window.addEventListener("resize",handleResize);
-      return () => window.removeEventListener("resize",handleResize)
-    }
-  } ,[])
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const btnClick = () => {
     console.log("버튼클릭감지")

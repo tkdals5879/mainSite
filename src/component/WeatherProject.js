@@ -37,7 +37,7 @@ function WeatherProject() {
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ y: { type: 'spring', damping: 30, delay: .4 }, opacity: { duration: 2, delay: .4 } }}>
-        <a href="https://sangmin-weatherproject.netlify.app/" target='_blank'>
+        <a href="https://sangmin-weatherproject.netlify.app/" target='_blank' rel="noopener noreferrer">
           <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >View Site</motion.button>
         </a>
         <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={handleModalOpen}>Detail</motion.button>
