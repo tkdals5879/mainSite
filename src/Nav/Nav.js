@@ -21,8 +21,8 @@ function Nav() {
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}>
       <li className='eng'><Link to={'/aboutMe'}>About me</Link></li>
-      <li className='eng'><Link to={'/aboutMe/viewPortfolio'}>ViewPortfolio</Link></li>
       <li className='eng'><Link to={'/aboutMe/skill'}>Skill</Link></li>
+      <li className='eng'><Link to={'/aboutMe/viewPortfolio'}>ViewPortfolio</Link></li>
       <li className='eng email' onClick={copyToClipboard}>E-mail : tkdals58799@gmail.com</li>
     </motion.ul>
   )

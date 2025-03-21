@@ -47,7 +47,19 @@
 }
 @media (max-width: 767px) {
   .skillWrap {
+    gap: 24px;
     padding: 6rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skillWrap .contentsWrap {
+    width: 100%;
+    justify-content: center;
+  }
+  .skillWrap .contentsWrap .icon {
+    margin: unset;
+  }
+  .skillWrap p {
+    display: none;
   }
 }
 @media (max-width: 435px) {

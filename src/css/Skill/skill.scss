@@ -50,7 +50,19 @@
 
 @media (max-width:767px) {
   .skillWrap{
+    gap: 24px;
     padding: 6rem 1rem;
+    grid-template-columns: repeat(2,1fr);
+    .contentsWrap {
+      width: 100%;
+      justify-content: center;
+      .icon{
+        margin: unset;
+      }
+    }
+    p{
+      display: none;
+    }
   }
 }
 

@@ -75,6 +75,9 @@
 }
 
 @media (max-width: 1279px) {
+  .portfolioWrap {
+    padding: 1rem;
+  }
   .portfolioWrap .titleWrap > div h1 {
     font-size: 32px;
   }

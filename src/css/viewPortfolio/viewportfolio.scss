@@ -104,10 +104,14 @@
 
 @media (max-width:1279px) {
   .viewportfolioWrap {
+    .induce{
+      display: none;
+    }
     .projectsWrap {
       margin-top: 5rem;
+      padding: 0 1rem;
       >ul {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
         gap: 24px;
         li{
           width: 100%;
@@ -126,8 +130,10 @@
     padding: 6rem 0;
     .projectsWrap{
       padding: 0 1rem;
+      margin-top: 2rem;
       ul{
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
       }
     }
   }

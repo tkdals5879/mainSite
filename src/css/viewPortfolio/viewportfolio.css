@@ -88,11 +88,15 @@
   }
 }
 @media (max-width: 1279px) {
+  .viewportfolioWrap .induce {
+    display: none;
+  }
   .viewportfolioWrap .projectsWrap {
     margin-top: 5rem;
+    padding: 0 1rem;
   }
   .viewportfolioWrap .projectsWrap > ul {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
   .viewportfolioWrap .projectsWrap > ul li {
@@ -109,9 +113,11 @@
   }
   .viewportfolioWrap .projectsWrap {
     padding: 0 1rem;
+    margin-top: 2rem;
   }
   .viewportfolioWrap .projectsWrap ul {
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
   }
 }
 

@@ -67,7 +67,7 @@
   left: 10rem;
   max-width: 700px;
   font-size: 16px;
-  line-height: 35px;
+  line-height: 1.5;
   color: #ccc;
 }
 .aboutMeWrap .bannerWrap p .accentFont {
@@ -171,7 +171,7 @@
   height: 100%;
   margin-top: 8rem;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
   color: #aaa;
 }
 
@@ -229,6 +229,9 @@
   }
 }
 @media (max-width: 767px) {
+  .aboutMeWrap {
+    padding-bottom: 5rem;
+  }
   .aboutMeWrap .bannerWrap {
     height: 350px;
   }
@@ -240,6 +243,8 @@
     margin-left: 1rem;
   }
   .aboutMeWrap .bannerWrap .titleWrap {
+    position: unset;
+    margin-top: 2rem;
     top: 1rem;
     left: 30%;
   }
@@ -254,15 +259,17 @@
     display: none;
   }
   .aboutMeWrap .bannerWrap .btnWrap {
-    top: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
+    position: unset;
+    margin-top: 1rem;
   }
   .aboutMeWrap .bannerWrap .btnWrap button {
     width: 150px;
-    height: 50px;
+    height: 40px;
   }
   .aboutMeWrap .bannerWrap .skillIconWrap {
+    display: none;
+  }
+  .aboutMeWrap .induce {
     display: none;
   }
   .aboutMeWrap .faithWrap {
@@ -284,9 +291,17 @@
   }
   .aboutMeWrap .faithWrap > div .faithRight .title {
     margin-top: unset;
+    margin-right: auto;
+  }
+  .aboutMeWrap .faithWrap > div .faithRight .btnWrap {
+    margin-right: auto;
   }
   .aboutMeWrap .faithWrap > div .faithRight .explain {
     text-align: left;
+  }
+  .aboutMeWrap .faithWrap > p {
+    margin: unset;
+    margin-top: 2rem;
   }
 }
 
