@@ -1,6 +1,6 @@
 [build]
-  publish = "build" # 빌드된 파일을 포함하는 디렉토리 경로
-  command = "npm run build"  # 빌드를 실행할 명령어
+  publish = "build"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"

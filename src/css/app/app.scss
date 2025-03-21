@@ -119,14 +119,15 @@
         }
 
         .infoBox {
+            width: 100%;
             text-align: center;
-            bottom: 7rem;
+            bottom: 1rem;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .bottomText {
-            letter-spacing: 2px;
+            display: none;
         }
     }
 }
