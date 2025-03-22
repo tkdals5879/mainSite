@@ -36,6 +36,7 @@
       li {
         justify-self: center;
         transition: .3s;
+
         button {
           width: 380px;
           background-color: transparent;
@@ -49,11 +50,11 @@
             margin-bottom: 1rem;
             background-color: transparent;
 
-            figure{
+            figure {
               overflow: hidden;
               transition: .3s;
 
-              img{
+              img {
                 transition: .3s;
               }
             }
@@ -67,11 +68,11 @@
           letter-spacing: 1px;
         }
 
-        &:hover img{
+        &:hover img {
           scale: 1.1;
         }
 
-        &:hover figure{
+        &:hover figure {
           border-radius: 50px;
         }
       }
@@ -84,12 +85,15 @@
   .viewportfolioWrap {
     .projectsWrap {
       margin-top: 5rem;
+
       >ul {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
-        li{
+
+        li {
           width: 100%;
-          button{
+
+          button {
             width: 100%;
           }
         }
@@ -100,19 +104,22 @@
 
 @media (max-width:1279px) {
   .viewportfolioWrap {
-    .induce{
+    .induce {
       display: none;
     }
+
     .projectsWrap {
       margin-top: 5rem;
       padding: 0 1rem;
+
       >ul {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
-        li{
+
+        li {
           width: 100%;
-          background-color: salmon;
-          button{
+
+          button {
             width: 100%;
           }
         }
@@ -122,12 +129,14 @@
 }
 
 @media (max-width:767px) {
-  .viewportfolioWrap{
+  .viewportfolioWrap {
     padding: 6rem 0;
-    .projectsWrap{
+
+    .projectsWrap {
       padding: 0 1rem;
       margin-top: 2rem;
-      ul{
+
+      ul {
         grid-template-columns: 1fr;
         row-gap: 4rem;
       }
