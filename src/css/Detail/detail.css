@@ -1,16 +1,17 @@
 .mainSiteDetailWrap {
   width: 100%;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   backdrop-filter: blur(20px);
+  z-index: 999;
 }
 .mainSiteDetailWrap .mainSiteDetail {
   background-color: rgba(0, 0, 0, 0.4431372549);
   backdrop-filter: blur(30px);
-  width: 1100px;
-  height: 85vh;
+  max-width: 1100px;
+  max-height: 100vh;
   overflow-y: scroll;
   border-radius: 30px;
   padding: 3rem;
@@ -42,40 +43,35 @@
   flex-direction: column;
   gap: 2rem;
 }
-.mainSiteDetailWrap .mainSiteDetail .contents .information div {
-  display: flex;
-  justify-content: space-between;
-}
-.mainSiteDetailWrap .mainSiteDetail .contents .information div p {
+.mainSiteDetailWrap .mainSiteDetail .contents .information > div p {
   font-size: 24px;
+  margin-bottom: 1rem;
 }
-.mainSiteDetailWrap .mainSiteDetail .contents .information div span {
+.mainSiteDetailWrap .mainSiteDetail .contents .information > div span {
   font-weight: 300;
-  line-height: 25px;
-  text-align: right;
+  line-height: 1.5px;
 }
-.mainSiteDetailWrap .mainSiteDetail .contents .information div:last-child {
+.mainSiteDetailWrap .mainSiteDetail .contents .information > div:last-child {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.mainSiteDetailWrap .mainSiteDetail .contents .information div:last-child .feedback {
+.mainSiteDetailWrap .mainSiteDetail .contents .information > div > div .feedback {
   display: flex;
   gap: 24px;
   align-items: center;
   padding: 0;
+  margin: 1rem 0;
 }
-.mainSiteDetailWrap .mainSiteDetail .contents .information div:last-child .feedback figure {
+.mainSiteDetailWrap .mainSiteDetail .contents .information > div > div .feedback figure {
   width: 300px;
-  height: 180px;
   overflow: hidden;
 }
 .mainSiteDetailWrap .mainSiteDetail .contents .information .bar {
   display: block;
   width: 100%;
-  height: 2px;
-  background-color: #aaa;
-  box-shadow: 0px 5px 10px #555;
+  height: 1px;
+  background-color: #333;
   margin: auto;
 }
 .mainSiteDetailWrap .accent {
