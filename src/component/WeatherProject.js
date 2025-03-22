@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { motion,AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import WeatherProjectDetail from './WeatherProjectDetail';
 
 function WeatherProject() {
 
-  const [modalOpen,setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
   const handleModalOpen = () => {
     setModalOpen(true)
   }
@@ -16,9 +16,9 @@ function WeatherProject() {
   return (
     <div className='portfolioWrap'>
       <motion.div className='titleWrap'
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ y: { type: 'spring', damping: 30 }, opacity: { duration: 2, delay: .2 } }}>
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ y: { type: 'spring', damping: 30 }, opacity: { duration: 2, delay: .2 } }}>
         <div>
           <h1>날씨 앱</h1>
           <span></span> {/* 주황색 포인트 점 */}
@@ -34,20 +34,29 @@ function WeatherProject() {
       </motion.div>
 
       <motion.div className='btnWrap'
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ y: { type: 'spring', damping: 30, delay: .4 }, opacity: { duration: 2, delay: .4 } }}>
-        <a href="https://sangmin-weatherproject.netlify.app/" target='_blank' rel="noopener noreferrer">
-          <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >View Site</motion.button>
-        </a>
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ y: { type: 'spring', damping: 30, delay: .4 }, opacity: { duration: 2, delay: .4 } }}>
+
+
+        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >
+          <a href="https://sangmin-weatherproject.netlify.app/" target='_blank' rel="noopener noreferrer">View Site</a>
+          </motion.button>
+
+
         <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={handleModalOpen}>Detail</motion.button>
-        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >Git Hub</motion.button>
+
+        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >
+          <a href="hhttps://github.com/tkdals5879/weatherProject" target='_blank' rel="noopener noreferrer">Git Hub</a>
+          </motion.button>
+
+
       </motion.div>
 
       <motion.div className='descriptionWrap'
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ y: { type: 'spring', damping: 30, delay: .6 }, opacity: { duration: 2, delay: .6 } }}>
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ y: { type: 'spring', damping: 30, delay: .6 }, opacity: { duration: 2, delay: .6 } }}>
         <div>
           <span></span> {/* Description옆 주황색 바 */}
           <p className='eng'>Description</p>
@@ -59,8 +68,8 @@ function WeatherProject() {
       </motion.div>
 
       <AnimatePresence>
-    {modalOpen && <WeatherProjectDetail onClose={handleModalClose}/>}
-    </AnimatePresence>
+        {modalOpen && <WeatherProjectDetail onClose={handleModalClose} />}
+      </AnimatePresence>
 
     </div>
   )

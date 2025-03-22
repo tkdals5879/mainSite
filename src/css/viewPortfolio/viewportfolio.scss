@@ -38,7 +38,7 @@
         transition: .3s;
         button {
           width: 380px;
-          background-color: #222;
+          background-color: transparent;
           border: none;
           cursor: pointer;
           transition: .3s;
@@ -47,20 +47,16 @@
             width: 100%;
             height: 300px;
             margin-bottom: 1rem;
-            background-color: #333;
-            transition: .3s;
-          }
+            background-color: transparent;
 
-          .mainsite {
-            background-image: url(/public/mainSiteImg.PNG);
-            background-position: center;
-            background-size: cover;
-          }
+            figure{
+              overflow: hidden;
+              transition: .3s;
 
-          .weatherProject {
-            background-image: url(/public/weatherProjectImg.PNG);
-            background-position: center;
-            background-size: 180%;
+              img{
+                transition: .3s;
+              }
+            }
           }
         }
 
@@ -71,12 +67,12 @@
           letter-spacing: 1px;
         }
 
-        &:hover {
+        &:hover img{
           scale: 1.1;
+        }
 
-          .thumbNail {
-            border-radius: 50px;
-          }
+        &:hover figure{
+          border-radius: 50px;
         }
       }
     }
@@ -93,7 +89,6 @@
         gap: 24px;
         li{
           width: 100%;
-          background-color: salmon;
           button{
             width: 100%;
           }

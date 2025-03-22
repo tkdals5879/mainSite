@@ -34,17 +34,29 @@ function ViewPortfolio() {
 
         <ul>
           <li><button onClick={() => handleClick('mainSite')}>
-            <div className='thumbNail mainsite'></div>
+            <div className='thumbNail'>
+              <figure>
+                <img src="/mainSiteImg.PNG" alt="mainSiteImg" />
+              </figure>
+            </div>
             <h2 className='eng'>Main Site</h2>
           </button></li>
 
           <li><button onClick={() => handleClick('newPortfolio')}>
-            <div className='thumbNail'></div>
+            <div className='thumbNail'>
+              <figure>
+                <img src="" alt="" />
+              </figure>
+            </div>
             <h2 className='eng'>New Project</h2>
           </button></li>
 
           <li><button onClick={() => handleClick('weatherProject')}>
-            <div className='thumbNail weatherProject'></div>
+            <div className='thumbNail'>
+              <figure>
+                <img src="/weatherProjectImg.PNG" alt="weatherProjectImg" />
+              </figure>
+            </div>
             <h2 className='eng'>Weather Project</h2>
           </button></li>
 

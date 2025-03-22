@@ -37,7 +37,7 @@
 }
 .viewportfolioWrap .projectsWrap > ul li button {
   width: 380px;
-  background-color: #222;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   transition: 0.3s;
@@ -46,18 +46,14 @@
   width: 100%;
   height: 300px;
   margin-bottom: 1rem;
-  background-color: #333;
+  background-color: transparent;
+}
+.viewportfolioWrap .projectsWrap > ul li button .thumbNail figure {
+  overflow: hidden;
   transition: 0.3s;
 }
-.viewportfolioWrap .projectsWrap > ul li button .mainsite {
-  background-image: url(/public/mainSiteImg.PNG);
-  background-position: center;
-  background-size: cover;
-}
-.viewportfolioWrap .projectsWrap > ul li button .weatherProject {
-  background-image: url(/public/weatherProjectImg.PNG);
-  background-position: center;
-  background-size: 180%;
+.viewportfolioWrap .projectsWrap > ul li button .thumbNail figure img {
+  transition: 0.3s;
 }
 .viewportfolioWrap .projectsWrap > ul li h2 {
   color: #fff;
@@ -65,10 +61,10 @@
   font-weight: 500;
   letter-spacing: 1px;
 }
-.viewportfolioWrap .projectsWrap > ul li:hover {
+.viewportfolioWrap .projectsWrap > ul li:hover img {
   scale: 1.1;
 }
-.viewportfolioWrap .projectsWrap > ul li:hover .thumbNail {
+.viewportfolioWrap .projectsWrap > ul li:hover figure {
   border-radius: 50px;
 }
 
@@ -82,7 +78,6 @@
   }
   .viewportfolioWrap .projectsWrap > ul li {
     width: 100%;
-    background-color: salmon;
   }
   .viewportfolioWrap .projectsWrap > ul li button {
     width: 100%;

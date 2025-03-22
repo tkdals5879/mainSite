@@ -48,7 +48,7 @@
       ul {
         display: flex;
         gap: 36px;
-        color: #555;
+        color: #808080;
         font-weight: 600;
       }
     }
@@ -139,6 +139,17 @@
         height: 700px;
         margin-left: 63px;
         align-content: center;
+
+        figure{
+          border-radius: 30px;
+          overflow: hidden;
+        }
+        p{
+          color: #808080;
+          text-align: center;
+          margin-top: .5rem;
+          font-size: 24px;
+        }
       }
 
       .faithRight {
@@ -173,9 +184,7 @@
               span {
                 display: block;
                 border: 1px solid #444;
-                padding: .3rem;
-                margin-right: 2rem;
-                margin-left: -.5rem;
+                padding: .5rem;
               }
             }
           }
@@ -225,6 +234,10 @@
           height: 350px;
           align-self: center;
           margin-top: 50px;
+
+          p{
+            font-size: 16px;
+          }
 
           figure {
             img {
@@ -349,7 +362,6 @@
       >div{
         flex-direction: column;
         text-align: center;
-        gap: 0;
         align-items: center;
         .faithLeft{
           width: auto;

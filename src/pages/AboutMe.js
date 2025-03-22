@@ -98,8 +98,9 @@ function AboutMe() {
             <div>
               <motion.div className='faithLeft' initial={{ x: -80, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ opacity: { duration: 2, delay: 2 }, x: { delay: 2, duration: .5 } }}>
                 <figure>
-                  <img src="" alt="" />
+                  <img src="/idPhoto.jpeg" alt="idPhoto" />
                 </figure>
+                  <p>1999.08.03 (27)</p>
               </motion.div>
               <motion.div className='faithRight' initial={{ x: 80, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ opacity: { duration: 2, delay: 2 }, x: { delay: 2, duration: .5 } }}>
 

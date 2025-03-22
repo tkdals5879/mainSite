@@ -42,7 +42,7 @@
 .aboutMeWrap .bannerWrap .titleWrap ul {
   display: flex;
   gap: 36px;
-  color: #555;
+  color: #808080;
   font-weight: 600;
 }
 .aboutMeWrap .bannerWrap .btnWrap {
@@ -120,6 +120,16 @@
   margin-left: 63px;
   align-content: center;
 }
+.aboutMeWrap .faithWrap > div .faithLeft figure {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.aboutMeWrap .faithWrap > div .faithLeft p {
+  color: #808080;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 24px;
+}
 .aboutMeWrap .faithWrap > div .faithRight {
   display: flex;
   flex-direction: column;
@@ -149,9 +159,7 @@
 .aboutMeWrap .faithWrap > div .faithRight .title ul li span {
   display: block;
   border: 1px solid #444;
-  padding: 0.3rem;
-  margin-right: 2rem;
-  margin-left: -0.5rem;
+  padding: 0.5rem;
 }
 .aboutMeWrap .faithWrap > div .faithRight .btnWrap {
   display: flex;
@@ -184,6 +192,9 @@
     height: 350px;
     align-self: center;
     margin-top: 50px;
+  }
+  .aboutMeWrap .faithWrap > div .faithLeft p {
+    font-size: 16px;
   }
   .aboutMeWrap .faithWrap > div .faithLeft figure img {
     max-width: 250px !important;
@@ -278,7 +289,6 @@
   .aboutMeWrap .faithWrap > div {
     flex-direction: column;
     text-align: center;
-    gap: 0;
     align-items: center;
   }
   .aboutMeWrap .faithWrap > div .faithLeft {

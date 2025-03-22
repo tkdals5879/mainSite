@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { motion,AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import MainSiteDetail from './MainSiteDetail';
 
 import '../css/MainSite/mainsite.css'
 
 function MainSite() {
 
-  const [modalOpen,setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
   const handleModalOpen = () => {
     setModalOpen(true)
   }
@@ -38,9 +38,15 @@ function MainSite() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ y: { type: 'spring', damping: 30, delay: .4 }, opacity: { duration: 2, delay: .4 } }}>
+
         <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >View Site</motion.button>
+
         <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={handleModalOpen}>Detail</motion.button>
-        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >GitHub</motion.button>
+
+
+        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} ><a href="https://github.com/tkdals5879/mainSite" target='_blank' rel="noopener noreferrer">GitHub</a></motion.button>
+
+
       </motion.div>
 
       <motion.div className='descriptionWrap'
@@ -57,9 +63,9 @@ function MainSite() {
           1인개발, 기여도 100%</p>
       </motion.div>
 
-    <AnimatePresence>
-    {modalOpen && <MainSiteDetail onClose={handleModalClose}/>}
-    </AnimatePresence>
+      <AnimatePresence>
+        {modalOpen && <MainSiteDetail onClose={handleModalClose} />}
+      </AnimatePresence>
 
     </div>
   )
