@@ -99,7 +99,7 @@ function App() {
       <motion.div className='infoBox' animate={isHidden ? { opacity: 0 } : { opacity: 1 }}>
         <p onClick={copyToClipboard} style={{ cursor: 'pointer' }}>E-mail : tkdals58799@gmail.com</p>
         <p>Phone Number : 010-5490-5699</p>
-        <p>Update : 2025.03.10</p>
+        <p>Update : 2025.03.24</p>
       </motion.div>
       {/* // 내정보 */}
 

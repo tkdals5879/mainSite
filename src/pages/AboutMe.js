@@ -33,7 +33,9 @@ function AboutMe() {
           <video className="backgroundVideo" autoPlay muted loop >
             <source src='/mainsiteVideo.mp4' type='video/mp4' />
           </video>
-          
+
+          {/* -------------------------------------------------------------------------------------------------------------------------------------------- 상단 메인 */}
+
           <motion.div
             className='bannerWrap' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
 
@@ -100,9 +102,13 @@ function AboutMe() {
 
           </motion.div>
 
+          {/* -------------------------------------------------------------------------------------------------------------------------------------------- 상단 메인 */}
+
           <motion.div className='induce' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, delay: 1 }}>
             <motion.span initial={{ y: 0 }} animate={{ y: 45 }} transition={{ duration: 1.5, delay: 2, repeat: Infinity }}></motion.span>
           </motion.div>
+
+          {/* -------------------------------------------------------------------------------------------------------------------------------------------- 간단한 소개 */}
 
           <div className='faithWrap'>
 
@@ -159,6 +165,8 @@ function AboutMe() {
               </motion.div>
             </div>
           </div>
+
+          {/* -------------------------------------------------------------------------------------------------------------------------------------------- 간단한 소개 */}
 
         </div>
       )}
