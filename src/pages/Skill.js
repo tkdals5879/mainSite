@@ -70,7 +70,7 @@ function Skill() {
             <img src="/redux.svg" alt="redux" />
           </figure>
           <div className='star'><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></div>
-          <h2>Redux <br />Redux Toolkit</h2>
+          <h2>Redux Toolkit</h2>
         </div>
         <p>Redux와 Redux Toolkit을 사용하여 애플리케이션의 전역 상태를 중앙에서 관리하고, <br /> 비동기 처리(Api호출) 및 액션 디스패치를 효율적으로 구현하여 데이터 흐름을 관리할 수 있습니다.</p>
       </motion.div>

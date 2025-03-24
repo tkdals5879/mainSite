@@ -33,25 +33,25 @@ function ViewPortfolio() {
         <h1>포트폴리오 보기</h1>
 
         <ul>
-          <li><button onClick={() => handleClick('mainSite')}>
+          <li className={selectedProject === 'mainSite' ? 'clicked' : ''}><button onClick={() => handleClick('mainSite')}>
             <div className='thumbNail'>
               <figure>
                 <img src="/mainSiteImg.PNG" alt="mainSiteImg" />
               </figure>
             </div>
             <h2 className='eng'>Main Site</h2>
-          </button></li>
+          </button></li> 
 
-          <li><button onClick={() => handleClick('newPortfolio')}>
+          <li className={selectedProject === 'newPortfolio' ? 'clicked' : ''}><button onClick={() => handleClick('newPortfolio')}>
             <div className='thumbNail'>
-              <figure>
-                <img src="" alt="" />
+              <figure className='newProjectImg'>
+                {/* <img src="" alt="" /> */}
               </figure>
             </div>
             <h2 className='eng'>New Project</h2>
           </button></li>
 
-          <li><button onClick={() => handleClick('weatherProject')}>
+          <li className={selectedProject === 'weatherProject' ? 'clicked' : ''}><button onClick={() => handleClick('weatherProject')}>
             <div className='thumbNail'>
               <figure>
                 <img src="/weatherProjectImg.PNG" alt="weatherProjectImg" />
@@ -60,8 +60,12 @@ function ViewPortfolio() {
             <h2 className='eng'>Weather Project</h2>
           </button></li>
 
-          <li><button onClick={() => handleClick('cloneCording')}>
-            <div className='thumbNail'></div>
+          <li className={selectedProject === 'cloneCording' ? 'clicked' : ''}><button onClick={() => handleClick('cloneCording')}>
+            <div className='thumbNail'>
+              <figure>
+                <img src="/cloneCordingImg.PNG" alt="cloneCordingImg" />
+              </figure>
+            </div>
             <h2 className='eng'>Clone Cording</h2>
           </button></li>
 

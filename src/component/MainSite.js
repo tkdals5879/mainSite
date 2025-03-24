@@ -17,6 +17,11 @@ function MainSite() {
 
   return (
     <div className='portfolioWrap'>
+
+      <figure>
+        <img src="/mainSiteImg.PNG" alt="mainSiteImgBg" />
+      </figure>
+
       <motion.div className='titleWrap'
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -43,8 +48,8 @@ function MainSite() {
 
         <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={handleModalOpen}>Detail</motion.button>
 
-
-        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} ><a href="https://github.com/tkdals5879/mainSite" target='_blank' rel="noopener noreferrer">GitHub</a></motion.button>
+        <a href="https://github.com/tkdals5879/mainSite" target='_blank' rel="noopener noreferrer">
+          <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >GitHub</motion.button></a>
 
 
       </motion.div>

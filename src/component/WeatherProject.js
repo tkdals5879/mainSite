@@ -15,6 +15,11 @@ function WeatherProject() {
 
   return (
     <div className='portfolioWrap'>
+
+      <figure>
+        <img src="/weatherProjectImg.PNG" alt="weatherProjectImgBg" />
+      </figure>
+
       <motion.div className='titleWrap'
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -38,18 +43,19 @@ function WeatherProject() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ y: { type: 'spring', damping: 30, delay: .4 }, opacity: { duration: 2, delay: .4 } }}>
 
-
-        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >
-          <a href="https://sangmin-weatherproject.netlify.app/" target='_blank' rel="noopener noreferrer">View Site</a>
+        <a href="https://sangmin-weatherproject.netlify.app/" target='_blank' rel="noopener noreferrer">
+          <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >
+            View Site
           </motion.button>
-
+        </a>
 
         <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={handleModalOpen}>Detail</motion.button>
 
-        <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >
-          <a href="hhttps://github.com/tkdals5879/weatherProject" target='_blank' rel="noopener noreferrer">Git Hub</a>
+        <a href="hhttps://github.com/tkdals5879/weatherProject" target='_blank' rel="noopener noreferrer">
+          <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >
+            GitHub
           </motion.button>
-
+        </a>
 
       </motion.div>
 
