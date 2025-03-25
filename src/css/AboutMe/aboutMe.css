@@ -252,6 +252,7 @@
   }
   .aboutMeWrap .backgroundVideo {
     padding-left: unset;
+    padding-top: 6rem;
     height: 350px;
   }
   .aboutMeWrap .bannerWrap {
