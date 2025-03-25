@@ -30,7 +30,7 @@ function AboutMe() {
       {location.pathname === "/aboutMe" && (
         <div className='aboutMeWrap'>
 
-          <video className="backgroundVideo" autoPlay muted loop >
+          <video className="backgroundVideo" autoPlay muted loop playsInline>
             <source src='/mainsiteVideo.mp4' type='video/mp4' />
           </video>
 
