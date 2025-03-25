@@ -95,8 +95,7 @@
   font-size: 24px;
 }
 .portfolioWrap .descriptionWrap > p {
-  line-height: 24px;
-  line-height: 30px;
+  line-height: 1.5;
   color: #ccc;
 }
 
@@ -160,7 +159,9 @@
     display: none;
   }
   .portfolioWrap .descriptionWrap {
-    display: none;
+    position: absolute;
+    top: 13rem;
+    left: 0;
   }
 }
 

@@ -110,8 +110,7 @@
     }
 
     >p {
-      line-height: 24px;
-      line-height: 30px;
+      line-height: 1.5;
       color: #ccc;
     }
   }
@@ -199,7 +198,9 @@
     }
 
     .descriptionWrap {
-      display: none;
+      position: absolute;
+      top: 13rem;
+      left: 0;
     }
   }
 }
