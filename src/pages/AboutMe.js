@@ -53,7 +53,7 @@ function AboutMe() {
                 </div>
                 <ul>
                   <li className='eng'>1999.08.03(27)</li>
-                  <li className='eng'>4 Portfolio</li>
+                  <li className='eng'>3 Portfolio</li>
                   <li className='eng'>8 Tech</li>
                   <li className='eng'>10+ Libraries</li>
                 </ul>
@@ -77,7 +77,7 @@ function AboutMe() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ y: { type: 'spring', damping: 30, delay: .6 }, opacity: { duration: 2, delay: .6 } }}>
                 <p>안녕하세요 웹 퍼블리셔 이상민입니다. <br />
-                  6개월간의 부트캠프수업을 수료하면서 4개의 포트폴리오를 제작하였습니다. <br />
+                  6개월간의 부트캠프수업을 수료하면서 3개의 포트폴리오를 제작하였습니다. <br />
                   웹 개발을위해 현재 8가지의 개발기술을 사용할 수 있습니다. <br />
                   <span className='accentFont'>특히</span> React에서 10+개의 라이브러리를 다룬 경험이 있습니다. <br /></p>
               </motion.div>
@@ -139,8 +139,8 @@ function AboutMe() {
                 </div>
 
                 <div className='btnWrap'>
-                  <motion.button type='button' className='eng' onClick={gotoViewportfolio} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }}>PLAY</motion.button>
-                  <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={copyToClipboard}>MY LIST</motion.button>
+                  <motion.button type='button' className='eng' onClick={gotoViewportfolio} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }}>View portfolio</motion.button>
+                  <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={copyToClipboard}>E-mail</motion.button>
                 </div>
 
                 <p className='explain'>
