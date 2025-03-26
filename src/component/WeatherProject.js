@@ -52,7 +52,7 @@ function WeatherProject() {
 
           <motion.button type='button' className='eng' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} onClick={handleModalOpen}>Detail</motion.button>
 
-          <a href="hhttps://github.com/tkdals5879/weatherProject" target='_blank' rel="noopener noreferrer">
+          <a href="https://github.com/tkdals5879/weatherProject" target='_blank' rel="noopener noreferrer">
             <motion.button type='button' className='eng lastbtn' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.99 }} transition={{ type: 'spring', stiffness: 500 }} >
               GitHub
             </motion.button>
