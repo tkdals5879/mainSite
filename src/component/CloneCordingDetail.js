@@ -83,6 +83,7 @@ function CloneCording({ onClose }) {
             <div>
               <p>사이트</p>
               <span>반응형</span>
+              <span>PC화면 지원</span>
             </div>
             <span className='bar'></span>
 

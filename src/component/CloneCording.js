@@ -34,7 +34,6 @@ function CloneCording() {
             <li className='eng'>CSS</li>
             <li className='eng'>JavaScript</li>
             <li className='eng'>Swiper</li>
-            <li>반응형</li>
           </ul>
         </motion.div>
 
